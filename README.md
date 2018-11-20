@@ -43,8 +43,8 @@ repositories {
 dependencies {
     // The production code uses the SLF4J logging API at compile time
     compile 'org.slf4j:slf4j-api:1.7.21'
-    // この辺は適宜変更
-    compile group: 'org.postgresql', name: 'postgresql', version: '9.3-1100-jdbc4'
+    // 最新のJDBCライブラリを取得
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
     
     // Declare the dependency for your favourite test framework you want to use in your tests.
     // TestNG is also supported by the Gradle Test task. Just change the
