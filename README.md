@@ -12,18 +12,18 @@ postgresのDBマイグレーション用flywayプロジェクト
 2. repositoryとなるディレクトリを切る
 
 
-``shell:事前準備
+```shell:事前準備
 mkdir flyway
 cd flyway
 grade init
-``
+```
 
 <br>
 3. これで雛形が完成したので、build.gradleを編集する
 
 記載内容は以下のような感じ
 
-```gradle:設定ファイル
+```gradle:設定ファイル
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'org.flywaydb.flyway'
