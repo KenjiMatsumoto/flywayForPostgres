@@ -1,7 +1,7 @@
 # flywayForPostgres
 postgresのDBマイグレーション用flywayプロジェクト
 
-前提条件
+## 前提条件
 
 以下のツールがインストール済みであること
 
@@ -9,6 +9,7 @@ postgresのDBマイグレーション用flywayプロジェクト
 
 <br>
 
+## 作業手順
 1. ローカル環境でgradleコマンドを実行してプロジェクトを作成
 
 2. repositoryとなるディレクトリを切る
@@ -74,3 +75,7 @@ flyway {
 }
 ```
 
+編集できたら後はbaselineを引いてflywayの記載に則ってDDLファイルを作成していく
+
+}記載
+}
