@@ -7,18 +7,21 @@ postgresのDBマイグレーション用flywayプロジェクト
 
 - gradle（バージョンはできれば最新で）
 
+<br>
+
 1. ローカル環境でgradleコマンドを実行してプロジェクトを作成
 
 2. repositoryとなるディレクトリを切る
 
 
 ```shell:事前準備
-mkdir flyway
-cd flyway
-grade init
+# mkdir flyway
+# cd flyway
+# grade init
 ```
 
 <br>
+
 3. これで雛形が完成したので、build.gradleを編集する
 
 記載内容は以下のような感じ
@@ -39,7 +42,7 @@ repositories {
 dependencies {
     // The production code uses the SLF4J logging API at compile time
     compile 'org.slf4j:slf4j-api:1.7.21'
-    この辺は適宜変更
+    // この辺は適宜変更
     compile group: 'org.postgresql', name: 'postgresql', version: '9.3-1100-jdbc4'
     
     // Declare the dependency for your favourite test framework you want to use in your tests.
