@@ -4,19 +4,26 @@ postgresのDBマイグレーション用flywayプロジェクト
 前提条件
 
 以下のツールがインストール済みであること
-・gradle（バージョンはできれば最新で）
 
-ローカル環境でgradleコマンドを実行してプロジェクトを作成
+- gradle（バージョンはできれば最新で）
 
-repositoryとなるディレクトリを切る
+1. ローカル環境でgradleコマンドを実行してプロジェクトを作成
+
+2. repositoryとなるディレクトリを切る
+
+
+``shell:事前準備
 mkdir flyway
 cd flyway
 grade init
+``
 
-これで雛形が完成したので、build.gradleを編集する
+<br>
+3. これで雛形が完成したので、build.gradleを編集する
 
 記載内容は以下のような感じ
 
+```gradle:設定ファイル
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'org.flywaydb.flyway'
@@ -62,3 +69,5 @@ flyway {
     password='mydb_ps'
     schemas = ['mydb_ps']
 }
+```
+
